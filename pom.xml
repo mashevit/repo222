@@ -67,4 +67,24 @@
 		<!-- https://mvnrepository.com/artifact/org.jboss.weld.se/weld-se-core -->
 		<!-- https://mvnrepository.com/artifact/org.bsc.framework/beanmanager -->
 	</dependencies>
+	
+	
+	<profiles>
+    <profile>
+        <id>openshift</id>
+        <build>
+            <finalName>alltravel</finalName>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                    <configuration>
+                        <outputDirectory>deployments</outputDirectory>
+                        <warName>mywb2-0.0.1-SNAPSHOT</warName>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+  </profiles>
 </project>
