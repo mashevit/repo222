@@ -69,7 +69,7 @@
 	</dependencies>
 	
 	
-	<profiles>
+<!-- 	<profiles>
     <profile>
         <id>openshift</id>
         <build>
@@ -86,5 +86,5 @@
             </plugins>
         </build>
     </profile>
-  </profiles>
+  </profiles> -->
 </project>
